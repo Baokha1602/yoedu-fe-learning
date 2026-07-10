@@ -8,7 +8,7 @@ const MainLayout = () => {
     <div className="app-layout">
       {/* Navigation Bar */}
       <nav className="top-nav">
-        <NavLink
+        {/* <NavLink
           to="/counter"
           className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
         >
@@ -45,13 +45,32 @@ const MainLayout = () => {
           className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
         >
           Shopping Cart
-        </NavLink>
+        </NavLink> */}
 
         <NavLink
           to="/UserPage"
           className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
         >
           UserPage
+        </NavLink>
+
+        <NavLink
+          to="/StudentFromPage"
+          className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
+        >
+          StudentForm
+        </NavLink>
+        <NavLink
+          to="/lesson4"
+          className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
+        >
+          StudentAntDesign
+        </NavLink>
+        <NavLink
+          to="/lesson5"
+          className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
+        >
+          Mini Shop
         </NavLink>
       </nav>
 
